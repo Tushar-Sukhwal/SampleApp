@@ -20,4 +20,5 @@ Rails.application.routes.draw do
   get "static_pages/help"
   get "static_pages/about"      # iska matlab h ki static_pages/about jab hit hoga controller static_pages_controller ke about action pe jayega
   root "static_pages#home"
+  resources :users
 end
