@@ -8,7 +8,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     end
     assert_response :unprocessable_entity
     assert_select "div#error_explanation"
-    assert_select "div.alert.alert-danger"
+    assert_select "div.error-message"
   end
   test "valid signup information" do
     get signup_path
